@@ -1,0 +1,33 @@
+{
+  "name": "@repo/common",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    "./constants/product": "./constants/product.ts",
+    "./constants/state": "./constants/state.ts",
+    "./logger": "./logger/index.ts",
+    "./types/bashTool": "./types/bashTool.ts",
+    "./types/fileEditTool": "./types/fileEditTool.ts",
+    "./types/fileReadTool": "./types/fileReadTool.ts",
+    "./types/fileWriteTool": "./types/fileWriteTool.ts",
+    "./types/globTool": "./types/globTool.ts",
+    "./types/grepTool": "./types/grepTool.ts",
+    "./types/lsTool": "./types/lsTool.ts",
+    "./types/thinkTool": "./types/thinkTool.ts",
+    "./types/tool": "./types/tool.ts",
+    "./utils/config": "./utils/config.ts"
+  },
+  "scripts": {
+    "lint": "eslint \"**/*.ts\""
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "eslint": "^8.57.0",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "pino": "^9.6.0",
+    "zod": "^3.24.2"
+  }
+}
